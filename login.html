@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="icon" href="data:;base64,=" />
+    </head>
+    <body>
+    <header>
+        <div class="menu-container"></div>
+    </header>
+            <h1>LOG IN</h1>
+                 <main class="container">
+                     <form id="logInForm">
+                         <div class="message-container"></div>
+
+                         <div>
+                            <input name="Email:" id="email" placeholder="Email/Username" />
+                            <div class="form-error" id="emailError">Please enter a valid email address</div> 
+                         </div>
+
+                         <div>
+                            <p>* Your password must be a minimum of 8 characters.</p>
+                            <input name="Password:" id="password" type="password" placeholder="Password" />
+                         </div>
+
+                         <div class="character-count">Character count: <span>0</span></div>
+
+                         <div>
+                             <button class="disabled" type="submit" disabled>Log In</button>
+                         </div>
+
+                     </form>
+                 </main>
+                    <script src="js/login.js" type="module"></script> 
+        <footer></footer>
+    </body>
+</html>
