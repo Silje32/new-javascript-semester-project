@@ -15,7 +15,7 @@ if (!id) {
    document.location.href = "./";
 }
 
-const productUrl = url + "products/" + id;
+const productUrl = url + "/products/" + id;
 
 
 const form = document.querySelector("form");
@@ -67,7 +67,7 @@ function submitForm(event)  {
   
 async function updateProduct(title, price, description, id) {
 
-    const productUrl = url + "products/" + id;
+    const productUrl = url + "/products/" + id;
 
     const data = JSON.stringify({ title: title, price: price, description: description });
 

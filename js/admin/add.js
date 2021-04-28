@@ -29,7 +29,7 @@ function submitForm(event)  {
 }
 
 async function addProduct(title, price, description) {
-    const productsUrl = url + "products";
+    const productsUrl = url + "/products";
     
     const data = JSON.stringify({ title: title, price: price, description: description });
 
