@@ -20,7 +20,7 @@ const id = params.get("id");
 console.log(id);
 
 
-const homeUrl = url + "home";
+const homeUrl = url + "/home";
 
 
 // Make a GET request to fetch a list of resources from your API.
@@ -38,7 +38,7 @@ const homeUrl = url + "home";
         
         // Display a hero banner on the home page. 
         let html = "";
-            html = `<img src="${url + imageBanner.hero_banner.url}"  alt="${imageBanner.hero_banner_alt_text}" />`;
+            html = `<img src="${url}${url + imageBanner.hero_banner.url}"  alt="${imageBanner.hero_banner_alt_text}" />`;
              
         heroBanner.innerHTML = html;
      
@@ -53,7 +53,7 @@ const homeUrl = url + "home";
 // Make a GET request to fetch a list of resources from your API.
 
  (async function ()  {
-    const productsUrl = url + "products";
+    const productsUrl = url + "/products";
 
 
     const productContainer = document.querySelector(".product-container");
@@ -72,7 +72,7 @@ const homeUrl = url + "home";
                                                <i class="fa fa-flag" data-id="${product.id}" data-name="${product.name}"></i>
                                                <p>${product.description}</p>
                                                <p>Price: ${product.price} $</p>
-                                               <img src="${product.image.url}" />
+                                               <img src="${url}${product.image.url}" alt="${product.title}"/>
                                            </div>`;
 
         });
