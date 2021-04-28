@@ -41,7 +41,7 @@ console.log(detailUrl);
                                           <h1>${details.title}</h1>
                                           <p>${details.description}</p>
                                           <p>Price: ${details.price} $</p>
-                                          <img src="${url}${details.image.url}" alt="${details.title}"/>
+                                          <img src="${url}${details.image.url}" alt="${details.title}" class="image"/>
                                           <button type="button" data-id="${details.id}" data-title="${details.title}">ADD TO CART</button>
                                      </div>`;
 

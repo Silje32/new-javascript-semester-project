@@ -38,7 +38,7 @@ const homeUrl = url + "/home";
         
         // Display a hero banner on the home page. 
         let html = "";
-            html = `<img src="${url}${imageBanner.hero_banner.url}"  alt="${imageBanner.hero_banner_alt_text}" />`;
+            html = `<img src="${url}${imageBanner.hero_banner.url}"  alt="${imageBanner.hero_banner_alt_text}" class="banner"/>`;
              
         heroBanner.innerHTML = html;
      
@@ -70,9 +70,9 @@ const homeUrl = url + "/home";
             productContainer.innerHTML += `<div class="product">
                                                <h2>${product.title}</h2>  
                                                <i class="fa fa-flag" data-id="${product.id}" data-name="${product.name}"></i>
-                                               <p>${product.description}</p>
+                                               <p>${product.description} class="text"</p>
                                                <p>Price: ${product.price} $</p>
-                                               <img src="${url}${product.image.url}" alt="${product.title}"/>
+                                               <img src="${url}${product.image.url}" alt="${product.title}" class="image"/>
                                            </div>`;
 
         });
@@ -83,7 +83,3 @@ const homeUrl = url + "/home";
     } 
 
 })();   
-
-
-
-// To create a new array use the filter method.

@@ -43,7 +43,7 @@ console.log(id);
             productsContainer.innerHTML += `<a class="products" href="product-details.html?id=${product.id}">
                                                <h2>${product.title}</h2>
                                                <p>Price: ${product.price} $</p>
-                                               <img src="${url}${product.image.url}" alt="${product.title}"/>
+                                               <img src="${url}${product.image.url}" alt="${product.title}" class="image"/>
                                             </a>`;
 
         
