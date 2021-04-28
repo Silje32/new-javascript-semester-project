@@ -38,7 +38,7 @@ const homeUrl = url + "/home";
         
         // Display a hero banner on the home page. 
         let html = "";
-            html = `<img src="${url}${url + imageBanner.hero_banner.url}"  alt="${imageBanner.hero_banner_alt_text}" />`;
+            html = `<img src="${url}${imageBanner.hero_banner.url}"  alt="${imageBanner.hero_banner_alt_text}" />`;
              
         heroBanner.innerHTML = html;
      

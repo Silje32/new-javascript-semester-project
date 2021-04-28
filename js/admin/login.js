@@ -67,7 +67,7 @@ function validateForm(event)  {
 
 async function doLogin(username, password) {
 
-   const logInUrl = url + "auth/local";
+   const logInUrl = url + "/auth/local";
    const data = JSON.stringify({ identifier: username, password: password });
 
    const options = {

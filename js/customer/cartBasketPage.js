@@ -29,7 +29,7 @@ function showCart(cartItems)  {
       cartContainer.innerHTML += `<div class="item" href="products.html?id=${cartItem.id}">
                                           <h2>${cartItem.title}</h2>
                                           <p>${cartItem.price}</p>
-                                          <img src="${cartItem.image.url}" />
+                                          <img src="${url}${cartItem.image.url}" alt="${cartItem.title}"/>
                                   </div>`;
 
 });

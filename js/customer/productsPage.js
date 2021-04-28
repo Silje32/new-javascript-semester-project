@@ -26,7 +26,7 @@ console.log(id);
 
 (async function ()  {
 
-    const productsUrl = url + "products";
+    const productsUrl = url + "/products";
     
 
     const productsContainer = document.querySelector(".products-container");
@@ -43,7 +43,7 @@ console.log(id);
             productsContainer.innerHTML += `<a class="products" href="product-details.html?id=${product.id}">
                                                <h2>${product.title}</h2>
                                                <p>Price: ${product.price} $</p>
-                                               <img src="${product.image.url}"/>
+                                               <img src="${url}${product.image.url}" alt="${product.title}"/>
                                             </a>`;
 
         
