@@ -1,4 +1,4 @@
-import { clearStorage } from "/js/admin/storage.js";
+import { clearStorage } from "./admin/storage.js";
 
 
 export default function logoutButton ()  {

@@ -1,5 +1,5 @@
-import { getUsername }  from "/js/admin/storage.js"; 
-import logoutButton from "/js/admin/logoutButton.js"; 
+import { getUsername }  from "./admin/storage.js"; 
+import logoutButton from "./admin/logoutButton.js"; 
 
 export default function createMenu()  {
 

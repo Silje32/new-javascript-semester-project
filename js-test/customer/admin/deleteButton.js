@@ -1,5 +1,5 @@
-import { url } from "/js/api.js"; 
-import { getToken }  from "/js/admin/storage.js"; 
+import { url } from "./api.js"; 
+import { getToken }  from "./admin/storage.js"; 
 
 
 export default function deleteButton(id)  {

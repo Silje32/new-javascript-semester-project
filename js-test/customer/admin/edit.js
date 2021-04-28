@@ -1,8 +1,8 @@
-import { url } from "/js/api.js"; 
-import createMenu from "/js/customer/createMenu.js";
-import deleteButton from "/js/admin/deleteButton.js";
-import { getToken }  from "/js/admin/storage.js"; 
-import displayMessage from "/js/displayMessage.js";
+import { url } from "./api.js"; 
+import createMenu from "./customer/createMenu.js";
+import deleteButton from "./admin/deleteButton.js";
+import { getToken }  from "./admin/storage.js"; 
+import displayMessage from "./displayMessage.js";
 
 createMenu();
 

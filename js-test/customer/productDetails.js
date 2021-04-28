@@ -1,7 +1,7 @@
-import { url } from "/js/api.js"; 
-import createMenu from "/js/customer/createMenu.js";
-import displayMessage from "/js/displayMessage.js";
-import { addToCart } from "/js/customer/cartButton.js";
+import { url } from "./api.js"; 
+import createMenu from "./customer/createMenu.js";
+import displayMessage from "./displayMessage.js";
+import { addToCart } from "./customer/cartButton.js";
 
 
 createMenu();

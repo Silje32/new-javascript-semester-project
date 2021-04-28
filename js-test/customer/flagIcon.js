@@ -1,8 +1,8 @@
 /* Each product has a featured flag that can be turned on or off. When the flag is on, the product should be 
    displayed on the homepage. */
 
-   import { saveToStorage } from "/js/customer/localStorage.js";
-   import { getFromStorage } from "/js/customer/localStorage.js";
+   import { saveToStorage } from "./localStorage.js";
+   import { getFromStorage } from "./localStorage.js";
 
   
    const flag = document.querySelectorAll(".product i");

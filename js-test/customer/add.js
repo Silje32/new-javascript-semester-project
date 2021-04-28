@@ -1,7 +1,7 @@
-import { url }  from "/js/api.js"; 
-import { getToken }  from "/js/admin/storage.js"; 
-import createMenu from "/js/customer/createMenu.js";
-import displayMessage from "/js/displayMessage.js";
+import { url }  from "./api.js"; 
+import { getToken }  from "./admin/storage.js"; 
+import createMenu from "./customer/createMenu.js";
+import displayMessage from "./displayMessage.js";
 
 
 createMenu();

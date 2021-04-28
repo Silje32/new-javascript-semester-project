@@ -1,6 +1,6 @@
-import displayMessage from "/js/displayMessage.js";
-import createMenu from "/js/customer/createMenu.js";
-import { addToCart } from "/js/customer/cartButton.js";
+import displayMessage from "./displayMessage.js";
+import createMenu from "./customer/createMenu.js";
+import { addToCart } from "./customer/cartButton.js";
 
 createMenu();
 

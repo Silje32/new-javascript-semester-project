@@ -1,10 +1,12 @@
-import { url } from "/js/api.js"; 
-import { searchProduct } from "/js/customer/searchProduct.js";
-import displayMessage from "/js/displayMessage.js";
-import createMenu from "/js/customer/createMenu.js";
+import { url } from "./api.js"; 
+import { searchProduct } from "./customer/searchProduct.js";
+import displayMessage from "./displayMessage.js";
+import createMenu from "./customer/createMenu.js";
 
 
 createMenu();
+
+searchProduct();
 
 const queryString = document.location.search;
 console.log(queryString);
@@ -25,6 +27,7 @@ console.log(id);
 (async function ()  {
 
     const productsUrl = url + "products";
+    
 
     const productsContainer = document.querySelector(".products-container");
 
@@ -35,21 +38,23 @@ console.log(id);
 
         productsContainer.innerHTML = "";
 
+
         products.forEach(function (product)  {
-            productsContainer.innerHTML += `<a class="products" href="edit.html?id=${product.id}">
+            productsContainer.innerHTML += `<a class="products" href="product-details.html?id=${product.id}">
                                                <h2>${product.title}</h2>
                                                <p>Price: ${product.price} $</p>
                                                <img src="${product.image.url}"/>
                                             </a>`;
 
+        
         });
 
 
-        searchProduct();
     } catch(error) {
         console.log(error);
         displayMessage ("error", error, ".products-container");
     } 
+   
 
 })();   
 
