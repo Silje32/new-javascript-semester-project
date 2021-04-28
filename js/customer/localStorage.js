@@ -1,4 +1,4 @@
-/* When the flag is on, the product should be displayed on the homepage.  */
+/*  When the flag is on, the product should be displayed on the homepage.  */
 
 
 
