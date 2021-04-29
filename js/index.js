@@ -68,11 +68,11 @@ const homeUrl = url + "/home";
         /* Create HTML for each item. Each product has a featured flag that can be turned on or off. */
         json.forEach(function (product) {
             productContainer.innerHTML += `<div class="product">
+                                               <img src="${url}${product.image.url}" alt="${product.title}" class="image"/>
                                                <h2>${product.title}</h2>  
                                                <i class="fa fa-flag" data-id="${product.id}" data-name="${product.name}"></i>
-                                               <p>${product.description} class="text"</p>
-                                               <p>Price: ${product.price} $</p>
-                                               <img src="${url}${product.image.url}" alt="${product.title}" class="image"/>
+                                               <p>${product.description}</p>
+                                               <p class="price">Price: ${product.price} $</p>
                                            </div>`;
 
         });

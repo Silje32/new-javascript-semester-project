@@ -38,9 +38,9 @@ console.log(detailUrl);
 
 
        detailsContainer.innerHTML = `<div class="items" href="cart-basket.html?id=${details.id}">
-                                          <h1>${details.title}</h1>
-                                          <p>${details.description}</p>
-                                          <p>Price: ${details.price} $</p>
+                                          <h2>${details.title}</h2>
+                                          <p class="description">${details.description}</p>
+                                          <p class="products-price">Price: ${details.price} $</p>
                                           <img src="${url}${details.image.url}" alt="${details.title}" class="image"/>
                                           <button type="button" data-id="${details.id}" data-title="${details.title}">ADD TO CART</button>
                                      </div>`;

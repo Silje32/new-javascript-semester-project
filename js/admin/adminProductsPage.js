@@ -37,9 +37,9 @@ console.log(id);
 
         products.forEach(function (product)  {
             productsContainer.innerHTML += `<a class="products" href="edit.html?id=${product.id}">
+                                               <img src="${url}${product.image.url}" alt="${product.title}" class="product-image"/>
                                                <h2>${product.title}</h2>
-                                               <p>Price: ${product.price} $</p>
-                                               <img src="${url}${product.image.url}" alt="${product.title}"/>
+                                               <p class="products-price">Price: ${product.price} $</p>
                                             </a>`;
 
         });
