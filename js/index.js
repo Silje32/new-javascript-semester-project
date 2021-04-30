@@ -1,14 +1,8 @@
 import { url }  from "/js/api.js"; 
 import createMenu from "/js/customer/createMenu.js";
-import { clickFlag }  from "/js/customer/flagIcon.js"; 
-import { saveToStorage } from "/js/customer/localStorage.js";
-import { getFromStorage } from "/js/customer/localStorage.js";
 
 
 createMenu();
-clickFlag();
-saveToStorage();
-getFromStorage();
 
 const queryString = document.location.search;
 console.log(queryString);
@@ -21,6 +15,34 @@ console.log(id);
 
 
 const homeUrl = url + "/home";
+
+
+
+// Make a GET request to fetch a list of resources from your API.
+
+(async function Logo()  {
+    const logoImage = document.querySelector(".menu-container");
+    
+    try { 
+        const response = await fetch(homeUrl);
+        const logo = await response.json();
+        console.log(logo);
+
+        const imageLogo = logo;
+
+
+        // Display a logo on the home page. 
+        let html = "";
+            html = `<img src="${url}${imageLogo.Logo.url}"  alt="${imageLogo.hero_banner_alt_text}" class="logo"/>`;
+             
+        logoImage.innerHTML = html;
+     
+    } catch(error) {
+        console.log(error);
+} 
+     
+})(); 
+
 
 
 // Make a GET request to fetch a list of resources from your API.

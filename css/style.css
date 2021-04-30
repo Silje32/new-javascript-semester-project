@@ -1,3 +1,12 @@
+/* COLOR PALETTE
+#000000  - black
+#FFFFFF  - white
+Background: #a9a9a9 - darkgrey
+Subheadlines and links: #990000  - darkred
+Action buttons and inputs: #FF6D05  - orange
+*/
+
+
 * {
     box-sizing: border-box;
 }
@@ -11,44 +20,36 @@ body {
 header, footer {
      background: white;
      width: 100%;
-     height: 50px;
 }
 
 header {
-    height: 80px;
+    height: 100px;
     margin-bottom: 10px;
 }
-
 
 footer {
     height: 80px;
     margin-top: 100px;
 }
 
-
-.menu-container {
-    background-color:white;
-    color: darkred;
+.menu a.link {
+    color: black;
 }
 
 .menu a, i {
-    color :black;
+    color: black;
     text-decoration: none;
-    padding-right: 25px;
     font-size: 18px;
 }
 
-
 .menu a.active {
-    color: darkred;
+    color: #990000;
 }
-
 
 .container {
     max-width: 760px;
     margin: 0 auto;
 }
-
 
 h1 {
     color: lightgrey;
@@ -56,22 +57,19 @@ h1 {
     text-align: center;
 }
 
-
 h2 {
-    color: darkred;
+    color: #990000;
     text-decoration: none;
     text-transform: uppercase;
     margin-bottom: 5px;
     font-family: "Lato", sans-serif;
 }
 
-
 h4 {
     color: black;
     text-decoration: none;
     float: right;
 }
-
 
 p {
     color: grey;
@@ -105,7 +103,7 @@ input {
     margin-top: 10px;
     padding: 10px;
     font-size: 16px;
-    border-color: orange;
+    border-color: #FF6D05; 
 }
 
 #cart, .disabled, #update, .delete, .add {
@@ -117,7 +115,7 @@ input {
 }
 
 #cart, .disabled, #update, .add   {
-    background: orange;
+    background: #FF6D05; 
     padding: 1rem;
     width: 200px;
 }
@@ -133,13 +131,8 @@ float: right;
 
 }
 
-
-.product i.far {
-    color: orangered;
-}
-
 .product i.fa {
-    color: orange;
+    color: #FF6D05; 
 }
 
 a {
@@ -200,7 +193,13 @@ a {
     color: black;
     text-decoration: none;
     padding-right: 5px;
-    font-size: 18px;
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.logo  {
+    width: 9%;
     padding: 10px;
 }
 
