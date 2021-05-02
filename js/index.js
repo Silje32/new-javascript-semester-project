@@ -87,7 +87,8 @@ const homeUrl = url + "/home";
         console.log(json);
 
 
-        /* Create HTML for each item. Each product has a featured flag that can be turned on or off. */
+        /* Create HTML for each item. Each product has a featured flag that can be turned on or off.  */
+
         json.forEach(function (product) {
             productContainer.innerHTML += `<div class="product">
                                                <img src="${url}${product.image.url}" alt="${product.title}" class="image"/>
@@ -105,3 +106,17 @@ const homeUrl = url + "/home";
     } 
 
 })();   
+
+
+
+/* When the flag is on, the product should be displayed on the homepage. */
+
+const flag = document.querySelectorAll(".product i");
+   console.log(flag);
+
+   if  (flag === null) {
+
+}  else {
+
+}
+
