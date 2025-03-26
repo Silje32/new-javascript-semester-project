@@ -30,6 +30,8 @@ header {
 footer {
     height: 80px;
     margin-top: 100px;
+    position: sticky;
+    bottom: 0;
 }
 
 .menu a.link {
@@ -53,7 +55,7 @@ footer {
 }
 
 h1 {
-    color: lightgrey;
+    color: pink;
     padding: 20px;
     text-align: center;
 }
